@@ -1,0 +1,74 @@
+# Alacritty Configuration File
+# ~/.config/alacritty/alacritty.toml
+
+[env]
+TERM = "alacritty"
+
+[window]
+dynamic_padding = true
+decorations = "full" # Use "none" for a borderless look managed by Hyprland
+
+[window.padding]
+x = 10
+y = 10
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[colors.primary]
+background = "0x1e1e2e"
+foreground = "0xcdd6f4"
+
+[colors.cursor]
+text = "0x1e1e2e"
+cursor = "0xf5e0dc"
+
+[colors.normal]
+black   = "0x45475a"
+red     = "0xf38ba8"
+green   = "0xa6e3a1"
+yellow  = "0xf9e2af"
+blue    = "0x89b4fa"
+magenta = "0xf5c2e7"
+cyan    = "0x94e2d5"
+white   = "0xbac2de"
+
+[colors.bright]
+black   = "0x585b70"
+red     = "0xf38ba8"
+green   = "0xa6e3a1"
+yellow  = "0xf9e2af"
+blue    = "0x89b4fa"
+magenta = "0xf5c2e7"
+cyan    = "0x94e2d5"
+white   = "0xa6adc8"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
